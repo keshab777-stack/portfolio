@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyber Dashboard</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#0f172a);
+    overflow:hidden;
+}
+
+body::before{
+    content:"";
+    position:absolute;
+    width:600px;
+    height:600px;
+    background:radial-gradient(circle,#38bdf8,transparent);
+    top:-200px;
+    left:-200px;
+    filter:blur(100px);
+}
+
+body::after{
+    content:"";
+    position:absolute;
+    width:600px;
+    height:600px;
+    background:radial-gradient(circle,#8b5cf6,transparent);
+    bottom:-200px;
+    right:-200px;
+    filter:blur(100px);
+}
+
+.container{
+    position:relative;
+    width:1000px;
+    backdrop-filter:blur(20px);
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:25px;
+    padding:40px;
+    color:white;
+    box-shadow:0 20px 50px rgba(0,0,0,.5);
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:50px;
+}
+
+nav h1{
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.hero{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.hero h2{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    line-height:1.8;
+    color:#cbd5e1;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 30px;
+    background:#38bdf8;
+    color:black;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    padding:25px;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:rgba(255,255,255,.15);
+}
+
+.number{
+    font-size:40px;
+    color:#38bdf8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<nav>
+<h1>CYBER-X</h1>
+<ul>
+<li>Home</li>
+<li>Projects</li>
+<li>About</li>
+<li>Contact</li>
+</ul>
+</nav>
+
+<div class="hero">
+
+<div>
+<h2>Future Is Built With Code</h2>
+<p>
+A futuristic dashboard concept using pure HTML and CSS.
+Glassmorphism, gradients, hover animations, responsive layout
+and modern UI design principles.
+</p>
+
+<a href="#" class="btn">Launch</a>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<div class="number">98%</div>
+<h3>Efficiency</h3>
+<p>AI optimized performance metrics.</p>
+</div>
+
+<div class="card">
+<div class="number">256</div>
+<h3>Projects</h3>
+<p>Completed engineering simulations.</p>
+</div>
+
+<div class="card">
+<div class="number">12K</div>
+<h3>Users</h3>
+<p>Worldwide active users.</p>
+</div>
+
+<div class="card">
+<div class="number">24/7</div>
+<h3>Monitoring</h3>
+<p>Real-time system tracking.</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
